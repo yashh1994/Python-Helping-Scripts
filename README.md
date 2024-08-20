@@ -1,4 +1,4 @@
-<pre>
+
 # Python-Helping-Scripts
 
 Welcome to **Python-Helping-Scripts**! This repository contains a collection of Python scripts that I use in my daily workflows to enhance productivity. These scripts cover a variety of tasks, making it easier to automate repetitive work, manage data, and perform other useful actions.
@@ -31,7 +31,7 @@ Make sure you have the necessary dependencies installed. If any script requires 
 Clone this repository to your local machine:
 
 <code>
-git clone https://github.com/yourusername/Python-Helping-Scripts.git
+git clone https://github.com/yash-1994/Python-Helping-Scripts.git
 cd Python-Helping-Scripts
 </code>
 
@@ -63,7 +63,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - <a href="https://twitter.com/yourusername">@yourusername</a> - your.email@example.com
+Your Name - <a href="https://twitter.com/yash-1994">@yash-1994</a> - your.email@example.com
 
-Project Link: <a href="https://github.com/yourusername/Python-Helping-Scripts">https://github.com/yourusername/Python-Helping-Scripts</a>
-</pre>
+Project Link: <a href="https://github.com/yash-1994/Python-Helping-Scripts">https://github.com/yash-1994/Python-Helping-Scripts</a>
+
