@@ -72,7 +72,7 @@ Distributed under the MIT License. See <code>LICENSE</code> for more information
 
 ## 📬 Contact
 
-Yash - <a href="https://twitter.com/yash-1994">@yash-1994</a> - yash.1994@example.com
+Yash - <a href="https://twitter.com/yash-1994">@yash-1994</a> - codeforyash@gmail.com
 
 Project Link: <a href="https://github.com/yash-1994/Python-Helping-Scripts">https://github.com/yash-1994/Python-Helping-Scripts</a>
 </pre>
