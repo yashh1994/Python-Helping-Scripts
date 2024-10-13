@@ -1,24 +1,12 @@
-import libtorrent as lt
-import time
+from deluge_client import DelugeRPCClient
 
-ses = lt.session()
-params = {
-    'save_path': './downloads/',  # Folder to save downloads
-    'storage_mode': lt.storage_mode_t(2),
-    'paused': False,
-    'auto_managed': True,
-    'duplicate_is_error': True
+client = DelugeRPCClient('127.0.0.1', 58846, 'username', 'password')
+client.connect()
+
+magnet_link = "magnet:?xt=urn:btih:3c4a0e3f8b3e69d82a7b5b5c13080cf47316b5c6&dn=Sample.txt"
+download_options = {
+    'download_location': './downloads/',
 }
-handle = lt.add_magnet_uri(ses, "magnet_link_here", params)
 
-print("Downloading metadata...")
-while not handle.has_metadata():
-    time.sleep(1)
-print("Metadata downloaded, starting torrent download...")
-
-while handle.status().state != lt.torrent_status.seeding:
-    s = handle.status()
-    print(f"Download: {s.progress * 100:.2f}% complete (down: {s.download_rate / 1000:.2f} kB/s up: {s.upload_rate / 1000:.2f} kB/s peers: {s.num_peers})")
-    time.sleep(5)
-
-print("Download complete!")
+client.call('core.add_torrent_magnet', magnet_link, download_options)
+print("Magnet link added!")
